@@ -1,3 +1,18 @@
+% Function Name: compute_ngram
+%
+% Description: Generates the spatiotemporal encoded ngram for a window of
+% EMG data (Fig. 3 in the paper)
+%
+% Arguments:
+%   buffer - window of data to be encoded
+%   eM - electrode memory, i.e. random hypervectors for each electrode
+%   model - struct containing model parameters such as hypervectors
+%   dimension, ngram size, and number of channels
+% 
+% Returns:
+%   ngram - spatiotemporal encoded hypervector
+%
+
 function [ngram] = compute_ngram(buffer, eM, model)
     ngram = ones(1, model.D);
     s = zeros(1, model.D);

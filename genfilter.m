@@ -1,4 +1,5 @@
-% Script: genfilter
+% Script Name: genfilter
+%
 % Description: Generates four cascaded filters used in preprocessing emg
 % signals for HD classification. Filters are:
 % 

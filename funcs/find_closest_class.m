@@ -1,3 +1,16 @@
+% Function Name: find_closest_class
+%
+% Description: Looks through the AM and finds the closest class to ngram
+%
+% Arguments:
+%   ngram - input ngram to be compared with each class in AM
+%   AM - associative memory containing gesture classes
+% 
+% Returns:
+%   maxSim - maximum cosine similarity found for ngram
+%   label - closest gesture class found for ngram
+%
+
 function [maxSim, label] = find_closest_class(ngram, AM)
     classes = AM.keys;
     maxSim = -1;
