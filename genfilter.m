@@ -1,3 +1,13 @@
+% Script: genfilter
+% Description: Generates four cascaded filters used in preprocessing emg
+% signals for HD classification. Filters are:
+% 
+% b1, a1 - 60 Hz notch filter
+% b2, a2 - 1-200 Hz bandpass filter
+% b3, a3 - moving average filter
+% b4, a4 - exponential averaging filter (unused in final publication)
+
+% reset workspace
 close all
 clear
 clc
