@@ -22,9 +22,7 @@ function [out, correct, accs] = getacc(subject, N, numtrain, chan, dirtrain, dir
     downsampleperiod = 100;
     % window the data to get N samples after downsampling for an ngram
     windowsize = N*classifyperiod;
-    
-    % set maximum vote window to the length of each gesture
-    votewin = round((1 - 2*twidth)*p.timegest/downsampleperiod/2); 
+        
     % randomly select the number of trials used for training
     traintrial = randperm(10);
     traintrial = traintrial(1:numtrain);
@@ -45,6 +43,9 @@ function [out, correct, accs] = getacc(subject, N, numtrain, chan, dirtrain, dir
     end
     rawtrain = rawtot; % concatenated raw data from selected training trials
     gestlabeltrain = gesttot; % gesture labels for data, with -1 being unused
+    
+    % set maximum vote window to the length of each gesture
+    votewin = round((1 - 2*twidth)*p.timegest/downsampleperiod/2); 
     
     % gather testing data
     rawtot = [];
@@ -160,7 +161,7 @@ function [out, correct, accs] = getacc(subject, N, numtrain, chan, dirtrain, dir
     remove(AM,-1);
     
     % bipolarize the AM
-    bipolarizeAM(AM);
+    bipolarize_AM(AM);
 
     % test classifier on testing data
     accs = zeros(votewin+1,1);
