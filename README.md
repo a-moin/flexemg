@@ -25,4 +25,4 @@ If you face any problems or discover any bugs, please let us know: *MyLastName A
 
 For more info, you can read and cite our paper:
 
-**[1] A. Moin, A. Zhou, A. Rahimi, S. Benatti, A. Menon, S. Tamakloe, J. Ting, N. Yamamoto, Y. Khan, F. Burghardt, L. Benini, A. Arias, and J. Rabaey, "An EMG Gesture Recognition System with Flexible High-Density Sensors and Brain-Inspired High-Dimensional Classifier," 2018 IEEE International Symposium on Circuits and Systems (ISCAS), Florence, Italy, 2017.**
+**[1] A. Moin, A. Zhou, A. Rahimi, S. Benatti, A. Menon, S. Tamakloe, J. Ting, N. Yamamoto, Y. Khan, F. Burghardt, L. Benini, A. Arias, and J. Rabaey, "An EMG Gesture Recognition System with Flexible High-Density Sensors and Brain-Inspired High-Dimensional Classifier," 2018 IEEE International Symposium on Circuits and Systems (ISCAS), Florence, Italy, 2018.**
